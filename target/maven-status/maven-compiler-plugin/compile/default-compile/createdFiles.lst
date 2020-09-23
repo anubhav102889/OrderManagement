@@ -1,0 +1,16 @@
+com\example\OrderMangement\Controllers\OrderDetailsController.class
+com\example\OrderMangement\Models\CouponInformation.class
+com\example\OrderMangement\Services\OrderDetailsService.class
+com\example\OrderMangement\Controllers\CustomerController.class
+com\example\OrderMangement\Controllers\CriteriaQueryController.class
+com\example\OrderMangement\Entities\Customer.class
+com\example\OrderMangement\Models\PagingPojo.class
+com\example\OrderMangement\Services\CustomerService.class
+com\example\OrderMangement\Repositories\CustomerRepository.class
+com\example\OrderMangement\OrderMangementApplication.class
+com\example\OrderMangement\Entities\OrderDetails.class
+com\example\OrderMangement\Repositories\OrderDetailsRespoitory.class
+com\example\OrderMangement\Repositories\CriteriaQueryRepository.class
+com\example\OrderMangement\Config\DbConfig.class
+com\example\OrderMangement\Models\PremiumCustomerInfo.class
+com\example\OrderMangement\Services\CriteriaQueryService.class
