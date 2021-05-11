@@ -1,0 +1,33 @@
+	pipeline{
+	   agent any
+		  stages {
+			stage('clone') {
+				steps{
+				   git url:'https://github.com/anubhav102889/AdmissonManagement.git',
+				   credentialsId:'GitHub',
+				   branch:'dev'
+				}
+			 }
+			 stage('compile') {
+				steps{
+				   withMaven(maven : 'Maven 3.6'){
+					  bat 'mvn compile'
+				   }
+				}
+			 }
+			 stage('package') {
+				steps{
+				   withMaven(maven : 'Maven 3.6'){
+					  bat 'mvn package -DskipTests'
+				   }
+				}
+			 }
+			 stage('install') {
+				steps{
+				   withMaven(maven : 'Maven 3.6'){
+					  bat 'mvn install -DskipTests'
+				   }
+				}
+			 }
+		  }
+	}
