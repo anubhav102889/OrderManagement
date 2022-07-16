@@ -1,0 +1,15 @@
+pipeline {
+  agent any
+
+  tools {
+    maven 'Maven' jdk 'JDK11'
+  }
+
+  stages {
+    stage('BUILD') {
+      steps {
+        bat 'mvn clean install -DskipTests'
+      }
+    }
+  }
+}
