@@ -8,6 +8,7 @@ public class OrderMangementApplication {
 
 	public static void main(String[] args) {
 		System.out.println("Development branch");
+		System.out.println("Feature branch");
 		SpringApplication.run(OrderMangementApplication.class, args);
 	}
 
